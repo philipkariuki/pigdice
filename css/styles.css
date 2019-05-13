@@ -5,7 +5,9 @@ body {
 .container-fluid {
 	overflow-x: hidden;
 }
-
+ol {
+	padding-inline-start: 250px;
+}
 .about {
 	color: white;
 	background-image: url(../assets/giph.gif);
