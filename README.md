@@ -13,10 +13,14 @@ The project entails creating a game of Pig Dice which meets the following criter
 * As a user, I need a way to know which player has won the game, which means they have scored 100 points before the alternate player.
 It involves cloning a remote github repo which has the asset files for building the page.  It also has a jpg of what the expected outcome of Delani Studio website should look like.  
 ## BDD
-| Input         | Output        |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Behaviour     | Input         | Output        |
+| ------------- | ------------- | ------------- |
+| Checking instruction  | Hovers over instructions  | Shows instructions  |
+| Setting player names  | name values in forms  | Displays P1, P2 names  |
+| Dice roll     | 1         | Current player turn over        |
+| Dice roll  | 2,3,4,5 or 6  | Adds cumulative score to the total  |
+| Player hold  | Hold  | Current turn ends  |
+| Win  | Total score 100  | Displays alert of a win  |
 ## Setup/Installation Requirements
 * jQuery 3.4.0 was used here.
 * Bootstrap 4.
