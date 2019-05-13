@@ -10,7 +10,7 @@ ol {
 }
 .about {
 	color: white;
-	background-image: url(../assets/giph.gif);
+	background-image: url(../images/giph.gif);
 	background-size: cover;
 	background-size: 100% 100%;
 	width: 100%;
@@ -74,4 +74,17 @@ input[type=submit] {
 	cursor: pointer;
 }
 
+.icon-wwd, .textwwd {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.textwwd {
+    display: none;
+}
+
+.description-wwd {
+    position: relative;
+    min-height: 200px;
+}
 
