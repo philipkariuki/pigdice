@@ -33,4 +33,10 @@
 		});
     });
     
-    
+    //Back-end logic
+	var round1Total = 0
+	var round2Total = 0
+	var totalScore1 = 0
+	var totalScore2 = 0
+	var hold1 = 0
+	var hold2 = 0
