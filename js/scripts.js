@@ -56,7 +56,7 @@ $(document).ready(function () {
 
         }
         $("#total1").text("Total score: " + totalScore1); //if totalScore1 equals to or is greater than 100, alerts win
-        if (totalScore1 >= 30) {
+        if (totalScore1 >= 100) {
             $("#turn2").hide();
             $("#hold2").hide();
             $("#turn1").hide();
@@ -106,7 +106,7 @@ $(document).ready(function () {
 
         }
         $("#total2").text("Total score: " + totalScore2);
-        if (totalScore2 >= 30) {
+        if (totalScore2 >= 100) {
             $("#turn2").hide();
             $("#hold2").hide();
             $("#turn1").hide();
