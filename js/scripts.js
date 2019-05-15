@@ -55,8 +55,8 @@ $(document).ready(function () {
             $("#round1").text("Round total: " + round1Total); //concats value of round1Total to span id round1
 
         }
-        $("#total1").text("Total score: " + totalScore1); //if totalScore1 equals to or is greater than 100, alerts win
-        if (totalScore1 >= 100) {
+        $("#total1").text("Total score: " + totalScore1); 
+        if (totalScore1 >= 100) { //if totalScore1 equals to or is greater than 100, alerts win
             $("#turn2").hide();
             $("#hold2").hide();
             $("#turn1").hide();
