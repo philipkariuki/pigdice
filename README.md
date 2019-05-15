@@ -1,6 +1,6 @@
 # Pig Dice
 This project's goal is to implement concepts learnt in the course of week 4. These include working with constructors, prototypes, objects, properties and methods in JavaScript as well as using jQuery and DOM manipulation & traversal.
-#### Independent Project for Moringa School Prep week 4 , Current version last updated on 12th May 2019.
+#### Independent Project for Moringa School Prep week 4 , Current version last updated on 15th May 2019.
 #### By **Philip Kariuki**
 ## Description
 ##### Week 4 independent project for Moringa School Prep.
