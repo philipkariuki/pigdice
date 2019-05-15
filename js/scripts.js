@@ -12,25 +12,21 @@
 	});
 
 
-	function player(name) {
-		this.playerz = name;
-	}
-	var name1 = new player("")
-	var name2 = new player("")
-
 
 
 	$(document).ready(function () {
-		$("#start").click(() => {
-			var name1 = $("input:text#cheza1").val();
+		$('#start').click(function (){
+			var name1 = $("#cheza1").val();
 			$("#player1").text("P1: " + name1);
 
-			var name2 = $("input:text#cheza2").val();
+			var name2 = $("#cheza2").val();
 			$("#player2").text("P2: " + name2);
 
 			$("#turn2").hide();
 			$("#holdTwo").hide();
 		});
+
+		
     });
     
     //Back-end logic
@@ -38,20 +34,18 @@
 	var round2Total = 0
 	var totalScore1 = 0
 	var totalScore2 = 0
-	var hold1 = 0
-    var hold2 = 0
     
     // Front-end logic 	
 	$(document).ready(function () {
-		$("#turn1").click(() => {
+		$("#turn1").click(function (){
 			var random1 = Math.floor((Math.random() * 6) + 1);
-			//var ts1 = round1Total + totalScore1 + hold1;
 			$("#outputOne").text("You rolled: " + random1);
 
 			if (random1 === 1) {
-				//round1Total = 0;
+				totalScore1 = totalScore1 - round1Total;
+				round1Total = 0;
 				alert("YOU ROLLED 1! END OF TURN")
-				//$("#roundOne").text("Round total: " + round1Total);
+				$("#roundOne").text("Round total: " + round1Total);
 				$("#turn1").hide();
 				$("#holdOne").hide();
 				$("#turn2").show();
@@ -59,7 +53,7 @@
 			} else {
 
 				round1Total = random1 + round1Total;
-				totalScore1 += random1;
+				totalScore1 = random1 + totalScore1;
 				$("#roundOne").text("Round total: " + round1Total);
 
 			}
@@ -75,8 +69,7 @@
 	});
 
 	$(document).ready(function () {
-		$("#holdOne").click(() => {
-			hold1 = round1Total + totalScore1 + hold1;
+		$("#holdOne").click(function () {
 			round1Total = 0;
 			$("#total1Score").text("Total score: " + totalScore1);
 			$("#turn1").hide();
@@ -93,7 +86,6 @@
 	$(document).ready(function () {
 		$("#turn2").click(() => {
 			var random2 = Math.floor((Math.random() * 6) + 1);
-			var ts = round2Total + totalScore2 + hold2;
 			$("#outputTwo").text("You rolled: " + random2);
 
 			if (random2 === 1) {
@@ -122,7 +114,6 @@
 
 	$(document).ready(function () {
 		$("#holdTwo").click(() => {
-			hold2 = round2Total + totalScore2 + hold2;
 			round2Total = 0;
 			$("#total2Score").text("Total score: " + totalScore2);
 			$("#turn2").hide();

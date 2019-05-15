@@ -61,6 +61,8 @@ h4.sub-title {
 	padding: 200px;
 	padding-top: 35px;
 	padding-bottom: 35px;
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(21, 94, 24, 0.795)
 }
 
 input[type=submit] {
@@ -73,7 +75,18 @@ input[type=submit] {
 	border-radius: 4px;
 	cursor: pointer;
 }
-
+#turn1 {
+	display: none;
+}
+#hold1 {
+	display: none;
+}
+#turn2 {
+	display: none;
+}
+#hold2 {
+	display: none;
+}
 .icon-wwd, .textwwd {
     position: absolute;
     top: 0;
